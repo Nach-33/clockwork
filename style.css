@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    height: 100vh;
+    background-color: rgb(110, 53, 189);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock-square{
+    height: 50vh;
+    width: 50vh;
+    background-color: rgb(238, 129, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#pivot{
+    background-color:rgb(110, 53, 189);
+    border-radius: 50%;
+    width: 5vh;
+    height: 5vh;
+    z-index: 100;
+}
+
+.balancer{
+    width: 50%;
+}
+
+.time-text{
+    background-color: rgb(110, 53, 189);
+    padding-right: 1.5rem;
+    font-size: large;
+    font-weight: bold;
+    display: flex;
+    justify-content: end;
+}
+
+.hand{
+    position: fixed;
+    text-align: end;
+    display: flex;
+    /* transition-duration: 200ms; */
+}
+
+#second-hand{
+    width: 45vh;
+    z-index: 3;
+}
+
+#minute-hand{
+    width: 48vh;
+    z-index: 2;
+}
+
+#hour-hand{
+    width: 37vh;
+}
